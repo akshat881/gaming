@@ -1,0 +1,126 @@
+body{
+  background-color:#09090b;
+  
+}
+@font-face{
+  font-family:"champ";
+  
+  src:url(champ.otf)format("opentype");
+}
+.cont{
+  display:flex;
+  list-style:none;
+  justify-content:space-evenly;
+  align-items:center;
+  font-family: 'Ubuntu', sans-serif;
+  margin-top:3em;
+}
+.b{
+  color:#ffffff;
+  margin-left:2em;
+}
+.b:hover{
+  color:#f1552b;
+}
+.hover-line::after{
+  content:"";
+  display:block;
+  width:0;
+  height:2px;
+  margin-left:35px;
+  background-color:#f1552b;
+  transition-width:.3;
+}
+.hover-line:hover::after{
+  width:50%;
+  transition-width:.3s;
+}
+input[type=search] {
+  width:120px;
+  color:#ffffff;
+  background-color: transparent;
+  text-align: center;
+ border: 2px solid #f1552b;
+ border-radius: 50px 50px 50px 50px;
+  
+}
+input:focus{
+    outline: none;
+}
+a{
+  text-decoration:none;
+}
+.c{
+  color:#ffffff;
+  margin-right:2em;
+}
+img{
+  position:absolute;
+  top:-10px;
+  left:90px;
+  z-index:-3;
+}
+.nex{
+  position:relative;
+  top:100px;
+  display:flex;
+  flex-direction:column;
+  width:30em;
+ align-items:center;
+  margin-left:60px;
+  
+}
+h1{
+background: linear-gradient(#ffffff, #5b5b5b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family:"champ";
+  font-size:150px;
+  letter-spacing: 5px;
+  line-height: 90%;
+  margin-bottom:0;
+  
+  
+  
+}
+P{
+  background: linear-gradient(#f7f7f7, #5b5b5b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Archivo', sans-serif;
+  font-size:30px;
+  margin-bottom:0;
+  margin-top:0;
+  margin-right:30px;
+  letter-spacing: 2px;
+}
+.bar{
+  width:188px;
+  height:50px;
+  text-align:center;
+  text-decoration: none;
+  margin-top:50px;
+  margin-right:240px;
+  border: 2px solid #f1552b;
+  background-color:transparent;
+ border-radius: 50px 50px 50px 50px;
+  cursor: pointer;
+  
+}
+.tex{
+  
+   background: linear-gradient(#f7f7f7, #5b5b5b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Archivo', sans-serif;
+  position:relative;
+  top:15px;
+  
+ 
+}
+svg{
+  position:relative;
+  top:2px;
+  left:-117px;
+  
+}
