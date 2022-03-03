@@ -16,24 +16,27 @@ body{
   margin-top:3em;
 }
 .b{
-  color:#ffffff;
+  color:#f1552b;
   margin-left:2em;
 }
-.b:hover{
+.hover-line:hover{
   color:#f1552b;
 }
 .hover-line::after{
   content:"";
   display:block;
   width:0;
-  height:2px;
-  margin-left:35px;
+  height:3px;
+   color:#f1552b;
   background-color:#f1552b;
-  transition-width:.3;
+  transition-width:0.3s;
+  position:relative;
+  top:3px; 
 }
 .hover-line:hover::after{
-  width:50%;
-  transition-width:.3s;
+  width:100%;
+  transition-width:0.3s;
+  color:#f1552b;
 }
 input[type=search] {
   width:120px;
@@ -48,6 +51,7 @@ input:focus{
     outline: none;
 }
 a{
+  color:#ffffff;
   text-decoration:none;
 }
 .c{
@@ -105,6 +109,7 @@ P{
   background-color:transparent;
  border-radius: 50px 50px 50px 50px;
   cursor: pointer;
+  box-shadow: 0 0px 10px #f1552b;
   
 }
 .tex{
