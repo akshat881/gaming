@@ -26,7 +26,7 @@ body{
   content:"";
   display:block;
   width:0;
-  height:3px;
+  height:2px;
    color:#f1552b;
   background-color:#f1552b;
   transition-width:0.3s;
@@ -35,7 +35,7 @@ body{
 }
 .hover-line:hover::after{
   width:100%;
-  transition-width:0.3s;
+  transition:0.3s;
   color:#f1552b;
 }
 input[type=search] {
@@ -43,6 +43,7 @@ input[type=search] {
   color:#ffffff;
   background-color: transparent;
   text-align: center;
+  caret-color: red;
  border: 2px solid #f1552b;
  border-radius: 50px 50px 50px 50px;
   
